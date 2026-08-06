@@ -1,1158 +1,270 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klussenbedrijf Berkel en Rodenrijs | Vakmanschap & Kwaliteit</title>
-    
-    <meta name="description" content="Zoekt u een betrouwbaar schildersbedrijf in Berkel en Rodenrijs, Bergschenhoek of Bleiswijk? Uw lokale vakman voor binnen- en buitenschilderwerk met 25 jaar ervaring. Vraag een gratis offerte aan!">
-    <meta name="keywords" content="schilder Berkel en Rodenrijs, schildersbedrijf Bergschenhoek, klussenbedwijk Bleiswijk, buitenschilderwerk Lansingerland, binnenschilderwerk, houtrot reparatie">
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HomeAndConstructionBusiness",
-      "name": "Klussenbedrijf Berkel en Rodenrijs",
-      "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be",
-      "telephone": "+31654967900",
-      "email": "tomma.info@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Verveenstraat 19",
-        "addressLocality": "Berkel en Rodenrijs",
-        "postalCode": "2651EX",
-        "addressCountry": "NL"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 51.9920,
-        "longitude": 4.4735
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday"
-        ],
-        "opens": "07:00",
-        "closes": "18:00"
-      },
-      "priceRange": "$$",
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "Berkel en Rodenrijs"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Bergschenhoek"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Bleiswijk"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Lansingerland"
-        }
-      ]
-    }
-    </script>
-
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Własny BitLife Online</title>
     <style>
-        /* Zmienne CSS - Premium Palette */
-        :root {
-            --bg-color: #f8fafc;
-            --text-color: #0f172a;
-            --card-bg: rgba(255, 255, 255, 0.85);
-            --card-border: rgba(241, 245, 249, 0.9);
-            --sub-text: #334155;
-            --nav-bg: rgba(255, 255, 255, 0.80);
-            --body-bg: #f8fafc;
-            --accent-green: #15803d;
-            --accent-orange: #ea580c;
-            --premium-gold: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
-            --shadow-color: rgba(15, 23, 42, 0.04);
-            --input-bg: #ffffff;
-            --nav-link-hover: #0f172a;
-            --nav-height: 100px;
-        }
-
-        [data-theme="dark"] {
-            --bg-color: #0b0f19;
-            --text-color: #f1f5f9;
-            --card-bg: rgba(17, 24, 39, 0.85);
-            --card-border: rgba(31, 41, 55, 0.6);
-            --sub-text: #94a3b8;
-            --nav-bg: rgba(11, 15, 25, 0.80);
-            --body-bg: #0b0f19;
-            --accent-green: #22c55e;
-            --accent-orange: #f97316;
-            --shadow-color: rgba(0, 0, 0, 0.4);
-            --input-bg: #1f2937;
-            --nav-link-hover: #ffffff;
-        }
-
-        /* Reset i Płynne Przejścia */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            transition: background 0.4s ease, border-color 0.4s ease, color 0.3s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, height 0.3s ease;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
         body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--body-bg);
-            padding-top: var(--nav-height);
-            overflow-x: hidden;
-            position: relative;
-        }
-
-        /* --- NAVIGATION BAR --- */
-        nav {
-            position: fixed;
-            top: 0; left: 0; width: 100%;
-            background-color: var(--nav-bg);
-            backdrop-filter: blur(30px);
-            -webkit-backdrop-filter: blur(30px);
-            box-shadow: 0 4px 40px var(--shadow-color), inset 0 -1px 0 rgba(255, 255, 255, 0.1);
-            border-bottom: 1px solid var(--card-border);
-            z-index: 1000;
-            height: var(--nav-height);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
             display: flex;
-            align-items: center;
-        }
-        nav.scrolled {
-            --nav-height: 75px;
-            background-color: rgba(255, 255, 255, 0.92);
-            box-shadow: 0 10px 30px var(--shadow-color);
-        }
-        [data-theme="dark"] nav.scrolled {
-            background-color: rgba(11, 15, 25, 0.92);
-        }
-        
-        .nav-container {
-            max-width: 1340px;
-            width: 100%;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 32px;
-        }
-        
-        .logo-block {
-            display: flex;
-            flex-direction: column;
-            text-decoration: none;
-            letter-spacing: -0.5px;
-        }
-        .logo-main {
-            font-size: 1.4rem;
-            font-weight: 900;
-            color: var(--accent-green);
-            line-height: 1.1;
-        }
-        
-        .logo-main span { 
-            background: linear-gradient(90deg, #d97706, #f97316, #f59e0b, #d97706);
-            background-size: 200% auto;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 900;
-            animation: shineText 6s linear infinite;
-        }
-        @keyframes shineText {
-            to { background-position: 200% center; }
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 36px;
-            align-items: center;
-        }
-        .nav-links a.menu-item {
-            text-decoration: none;
-            color: var(--sub-text);
-            font-weight: 600;
-            font-size: 0.95rem;
-            position: relative;
-            padding: 10px 0;
-            letter-spacing: 0.2px;
-        }
-        .nav-links a.menu-item:hover, .nav-links a.menu-item.active {
-            color: var(--nav-link-hover);
-        }
-        .nav-links a.menu-item::after {
-            content: '';
-            position: absolute;
-            width: 0; height: 2px; bottom: 0; left: 50%;
-            background: var(--accent-orange);
-            transform: translateX(-50%);
-            transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .nav-links a.menu-item:hover::after, .nav-links a.menu-item.active::after { 
-            width: 100%; 
-        }
-        
-        .theme-toggle-wrapper {
-            display: flex;
-            align-items: center;
-        }
-        .theme-toggle {
-            background: transparent;
-            border: 1px solid var(--card-border);
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            font-size: 1.1rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 12px var(--shadow-color);
         }
-        .theme-toggle:hover { 
-            transform: translateY(-2px);
-            border-color: var(--accent-orange);
-            background: var(--bg-color);
-        }
-
-        .nav-btn {
-            background: #0f172a;
-            color: #ffffff !important;
-            padding: 14px 28px;
+        .game-container {
+            width: 100%;
+            max-width: 600px;
+            background-color: #1e1e1e;
             border-radius: 12px;
-            font-weight: 700;
-            font-size: 0.92rem;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.15);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
         }
-        [data-theme="dark"] .nav-btn {
-            background: #ffffff;
-            color: #0b0f19 !important;
-            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.05);
-        }
-        .nav-btn span { transition: transform 0.3s ease; }
-        .nav-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.25);
-            background: var(--accent-orange);
-            color: white !important;
-        }
-        [data-theme="dark"] .nav-btn:hover {
-            background: var(--accent-green);
-            color: white !important;
-        }
-        .nav-btn:hover span { transform: translateX(5px); }
-
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            gap: 6px;
-            cursor: pointer;
-            background: none;
-            border: none;
-            z-index: 1010;
-            padding: 5px;
-        }
-        .menu-toggle span {
-            display: block;
-            width: 26px;
-            height: 2px;
-            background-color: var(--text-color);
-            border-radius: 2px;
-        }
-        .menu-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(6px, 5px); }
-        .menu-toggle.open span:nth-child(2) { opacity: 0; transform: scale(0); }
-        .menu-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
-
-        body::before, body::after {
-            content: "";
-            position: absolute;
-            width: 400px;
-            height: 400px;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(21, 128, 61, 0.05) 0%, rgba(255,255,255,0) 70%);
-            z-index: -1;
-            pointer-events: none;
-            animation: floatShapes 16s infinite alternate ease-in-out;
-        }
-        body::before { top: 10%; left: -150px; }
-        body::after { top: 50%; right: -150px; animation-delay: -8s; background: radial-gradient(circle, rgba(234, 88, 12, 0.04) 0%, rgba(255,255,255,0) 70%); }
-
-        @keyframes floatShapes {
-            0% { transform: translateY(0) scale(1); }
-            100% { transform: translateY(60px) scale(1.15); }
-        }
-
-        header {
-            background: linear-gradient(180deg, rgba(15, 23, 42, 0.45) 0%, rgba(11, 15, 25, 0.85) 100%), 
-                        url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
-            color: #ffffff;
-            padding: 220px 24px 190px 24px;
-            text-align: center;
-            position: relative;
-            clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-        }
-        header h1 {
-            font-size: 3.8rem;
-            font-weight: 900;
-            margin-bottom: 24px;
-            letter-spacing: -2px;
-            text-shadow: 0 4px 30px rgba(0,0,0,0.5);
-            max-width: 1000px;
-            margin-left: auto; margin-right: auto;
-            line-height: 1.1;
-        }
-        header p {
-            font-size: 1.4rem;
-            font-weight: 400;
-            margin-bottom: 44px;
-            text-shadow: 0 2px 15px rgba(0,0,0,0.4);
-            color: #cbd5e1;
-            letter-spacing: 0.5px;
-        }
-        
-        .btn-main {
-            display: inline-block;
-            background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
-            color: #ffffff;
-            padding: 18px 44px;
-            text-decoration: none;
-            border-radius: 12px;
-            font-weight: 700;
-            font-size: 1.05rem;
-            box-shadow: 0 10px 30px rgba(234, 88, 12, 0.35);
-            letter-spacing: 0.3px;
-        }
-        .btn-main:hover { 
-            transform: translateY(-3px); 
-            box-shadow: 0 15px 35px rgba(234, 88, 12, 0.5);
-        }
-
-        .container { max-width: 1240px; margin: 0 auto; padding: 100px 32px; }
-        section { scroll-margin-top: 140px; margin-bottom: 140px; }
-        section h2 {
-            text-align: center;
-            font-size: 3rem;
-            font-weight: 900;
-            margin-bottom: 16px;
-            color: var(--accent-green);
-            letter-spacing: -1px;
-        }
-        .section-subtitle {
-            text-align: center;
-            color: var(--sub-text);
-            margin-bottom: 70px;
-            font-size: 1.15rem;
-            font-weight: 500;
-        }
-
-        .about-card {
-            background: var(--card-bg);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            padding: 60px 50px;
-            border-radius: 32px;
-            box-shadow: 0 30px 60px var(--shadow-color);
-            text-align: center;
-            max-width: 1000px;
-            margin: 0 auto;
-            border: 1px solid var(--card-border);
-        }
-        .about-card p { font-size: 1.3rem; margin-bottom: 45px; color: var(--text-color); font-weight: 400; line-height: 1.7; }
-        
-        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px; }
-        .stat-item {
-            background: linear-gradient(145deg, rgba(240,255,244,0.5), rgba(198,246,213,0.2));
-            padding: 35px 25px;
-            border-radius: 20px;
-            border: 1px solid rgba(198,246,213,0.4);
-        }
-        [data-theme="dark"] .stat-item {
-            background: linear-gradient(145deg, rgba(22,163,74,0.1), rgba(22,163,74,0.02));
-            border-color: rgba(34,197,94,0.2);
-        }
-        .stat-item h4 { font-size: 3rem; color: var(--accent-green); font-weight: 900; margin-bottom: 5px; }
-
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 30px; }
-        .service-card {
-            background: var(--card-bg);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            padding: 45px 35px;
-            border-radius: 28px;
-            box-shadow: 0 15px 35px var(--shadow-color);
-            border: 1px solid var(--card-border);
-            overflow: hidden;
-            position: relative;
-        }
-        .service-card::before {
-            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px;
-            background: linear-gradient(90deg, var(--accent-green), var(--accent-orange));
-            transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease;
-        }
-        .service-card:hover::before { transform: scaleX(1); }
-        .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.06);
-            border-color: rgba(234, 88, 12, 0.2);
-        }
-        .service-card h3 { margin-bottom: 18px; color: var(--accent-green); font-size: 1.5rem; font-weight: 800; display: flex; align-items: center; gap: 12px; }
-        .service-card p { font-size: 1.05rem; color: var(--sub-text); line-height: 1.6; }
-
-        .process-box {
-            background: linear-gradient(135deg, #14532d, #166534, #0f766e, #14532d);
-            background-size: 300% 300%;
-            animation: dynamicGlow 12s ease infinite;
-            color: white; padding: 70px 50px; border-radius: 40px;
-            box-shadow: 0 30px 60px rgba(20, 83, 45, 0.25);
-        }
-        @keyframes dynamicGlow {
-            0%{background-position:0% 50%}
-            50%{background-position:100% 50%}
-            100%{background-position:0% 50%}
-        }
-        .process-box h3 { font-size: 2.4rem; margin-bottom: 50px; text-align: center; font-weight: 900; color: #fff; letter-spacing: -0.5px; }
-        .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px; }
-        .step {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            padding: 35px 25px; border-radius: 24px; text-align: center;
-            backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-        }
-        .step:hover {
-            background: rgba(255, 255, 255, 0.12);
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-        }
-        .step h4 { color: #ffffff; font-size: 1.3rem; margin-bottom: 10px; font-weight: 700; }
-        .step p { color: #e2e8f0; font-size: 1rem; opacity: 0.9; }
-        .step-num { font-size: 2.4rem; font-weight: 900; color: #fef08a; margin-bottom: 15px; display: inline-block; }
-
-        /* --- PORTFOLIO GALLERY --- */
-        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 40px; }
-        .gallery-item {
-            background: var(--card-bg);
-            border-radius: 32px; overflow: hidden;
-            box-shadow: 0 20px 45px var(--shadow-color);
-            border: 1px solid var(--card-border);
-            cursor: pointer; position: relative;
-        }
-        .gallery-img-container { width: 100%; height: 380px; overflow: hidden; position: relative; border-radius: 32px 32px 0 0; }
-        .gallery-img {
-            width: 100%; height: 100%; background-size: cover; background-position: center;
-            transform: scale(1.01);
-            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .gallery-overlay {
-            position: absolute; bottom: 0; left: 0; width: 100%;
-            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(15, 23, 42, 0.95) 85%);
-            padding: 50px 30px 30px 30px;
-            transform: translateY(20px); opacity: 0;
-            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
-        }
-        .gallery-item:hover .gallery-img { transform: scale(1.06); }
-        .gallery-item:hover .gallery-overlay { transform: translateY(0); opacity: 1; }
-        
-        .gallery-overlay h3 { color: #ffffff; font-size: 1.5rem; margin-bottom: 10px; font-weight: 800; }
-        .gallery-overlay p { color: #cbd5e1; font-size: 1rem; line-height: 1.6; }
-
-        .gallery-caption {
-            padding: 25px 30px;
-            text-align: center;
-            background: var(--card-bg);
-            border-top: 1px solid var(--card-border);
-        }
-        .gallery-caption h3 {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--text-color);
-            letter-spacing: -0.5px;
-        }
-
-        .mobile-portfolio-desc {
-            display: none;
-            padding: 0 30px 25px 30px;
-            font-size: 1rem;
-            color: var(--sub-text);
-            text-align: center;
-            background: var(--card-bg);
-        }
-
-        .google-reviews-box {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 32px;
-            padding: 60px 40px;
-            text-align: center;
-            box-shadow: 0 25px 50px var(--shadow-color);
-            max-width: 750px;
-            margin: 0 auto;
-        }
-        .google-reviews-box h3 { font-size: 1.9rem; font-weight: 900; margin-bottom: 15px; color: var(--text-color); }
-        .google-stars { color: #f59e0b; font-size: 2.4rem; margin-bottom: 20px; letter-spacing: 3px; }
-        .google-reviews-box p { font-size: 1.15rem; color: var(--sub-text); margin-bottom: 35px; max-width: 550px; margin-left: auto; margin-right: auto; }
-        
-        .btn-google-review {
-            display: inline-flex; align-items: center; justify-content: center; gap: 14px;
-            background: #ffffff; color: #0f172a; border: 1px solid #e2e8f0; padding: 18px 36px;
-            border-radius: 14px; font-size: 1.05rem; font-weight: 700; text-decoration: none;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
-        }
-        [data-theme="dark"] .btn-google-review { background: #1f2937; color: #ffffff; border-color: #374151; }
-        .btn-google-review:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-color: var(--accent-orange); }
-        .google-btn-icon { width: 24px; height: 24px; }
-
-        .lightbox {
-            display: none; position: fixed; z-index: 2000; top: 0; left: 0; width: 100%; height: 100%;
-            background-color: rgba(11, 15, 25, 0.98); justify-content: center; align-items: center;
-            opacity: 0; transition: opacity 0.4s ease; padding: 20px;
-        }
-        .lightbox.active { display: flex; opacity: 1; }
-        .lightbox-img { max-width: 95%; max-height: 85%; border-radius: 20px; box-shadow: 0 25px 60px rgba(0,0,0,0.8); transform: scale(0.95); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
-        .lightbox.active .lightbox-img { transform: scale(1); }
-        .lightbox-close { position: absolute; top: 30px; right: 40px; color: #fff; font-size: 3.5rem; font-weight: 300; cursor: pointer; }
-
-        /* CONTACT & MAP */
-        .contact-box {
-            background: var(--card-bg);
-            border-radius: 32px;
-            padding: 55px;
+        h1, h2, h3 { color: #f39c12; text-align: center; margin-top: 0; }
+        .stats-grid {
             display: grid;
-            grid-template-columns: 1.25fr 1fr;
-            gap: 50px;
-            box-shadow: 0 30px 70px var(--shadow-color);
-            border: 1px solid var(--card-border);
-        }
-        
-        .contact-sidebar {
-            background: linear-gradient(135deg, #14532d 0%, #166534 100%);
-            color: white;
-            padding: 40px;
-            border-radius: 24px;
-            box-shadow: 0 15px 35px rgba(20, 83, 45, 0.2);
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-        }
-        .contact-sidebar h3 { font-size: 1.9rem; color: #fef08a; font-weight: 900; letter-spacing: -0.5px; }
-        .contact-sidebar p { font-size: 1.05rem; opacity: 0.95; line-height: 1.6; }
-        .info-link { color: #fff; text-decoration: none; font-weight: 700; display: inline-block; }
-        .info-link:hover { color: #fef08a; transform: translateX(5px); }
-        
-        .map-wrapper {
-            width: 100%;
-            height: 250px;
-            border-radius: 16px;
-            overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-            margin-top: auto;
-        }
-        .map-wrapper iframe {
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-
-        .form-trust-bar {
-            display: flex;
-            justify-content: space-around;
-            background: var(--bg-color);
-            border: 1px solid var(--card-border);
-            padding: 14px;
-            border-radius: 14px;
-            margin-bottom: 30px;
-            font-size: 0.92rem;
-            font-weight: 700;
-            color: var(--accent-green);
-        }
-        .form-trust-bar span { display: flex; align-items: center; gap: 8px; }
-
-        .contact-form { display: flex; flex-direction: column; gap: 24px; }
-        .form-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        
-        .form-group { display: flex; flex-direction: column; gap: 8px; }
-        .form-group label { font-size: 0.92rem; font-weight: 700; color: var(--text-color); }
-        
-        .form-group input, .form-group textarea, .form-group select {
-            padding: 16px;
-            border: 1px solid var(--card-border);
-            border-radius: 14px;
-            font-size: 1rem;
-            background-color: var(--input-bg);
-            color: var(--text-color);
-            width: 100%;
-            font-family: inherit;
-            box-shadow: inset 0 1px 2px rgba(0,0,0,0.01);
-        }
-        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
-            outline: none;
-            border-color: var(--accent-green);
-            box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.12);
-        }
-
-        .btn-submit-premium {
-            background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
-            color: white;
-            border: none;
-            padding: 18px 36px;
-            border-radius: 14px;
-            font-size: 1.1rem;
-            font-weight: 800;
-            cursor: pointer;
-            margin-top: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            box-shadow: 0 8px 25px rgba(234, 88, 12, 0.3);
-        }
-        .btn-submit-premium:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-        }
-        .btn-submit-premium:hover:not(:disabled) {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 30px rgba(234, 88, 12, 0.45);
-        }
-
-        /* SEKCDA REGIONU / OBSZARU DZIAŁANIA (SEO) */
-        .werkgebied-section {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 32px;
-            padding: 45px;
-            text-align: center;
-            box-shadow: 0 15px 35px var(--shadow-color);
-            margin-top: 80px;
-        }
-        .werkgebied-section h3 {
-            font-size: 1.6rem;
-            font-weight: 800;
-            color: var(--accent-green);
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            background: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
             margin-bottom: 15px;
         }
-        .werkgebied-grid {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 20px;
+        .stat-bar { background: #444; border-radius: 5px; height: 12px; overflow: hidden; margin-top: 3px; }
+        .stat-fill { background: #2ecc71; height: 100%; width: 0%; transition: width 0.3s; }
+        .log-box {
+            background: #000;
+            border: 1px solid #333;
+            height: 150px;
+            overflow-y: auto;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 14px;
         }
-        .gebied-badge {
-            background: var(--bg-color);
-            border: 1px solid var(--card-border);
-            padding: 10px 24px;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 0.95rem;
-            color: var(--text-color);
-            box-shadow: 0 4px 10px var(--shadow-color);
+        .log-entry { margin-bottom: 6px; border-bottom: 1px solid #222; padding-bottom: 4px; }
+        .actions-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
         }
-
-        .floating-call-btn {
-            position: fixed; bottom: 35px; right: 35px; width: 65px; height: 65px;
-            background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
-            color: white; border-radius: 50%; display: flex; justify-content: center; align-items: center;
-            font-size: 1.8rem; box-shadow: 0 10px 30px rgba(234, 88, 12, 0.4);
-            cursor: pointer; z-index: 999; animation: advancedPulse 2.5s infinite;
-            -webkit-tap-highlight-color: transparent;
+        button:hover { background: #2980b9; }
+        button.age-btn {
+            grid-column: span 2;
+            background: #2ecc71;
+            font-size: 18px;
         }
-        @keyframes advancedPulse {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.5), 0 10px 30px rgba(234, 88, 12, 0.4); }
-            70% { transform: scale(1.08); box-shadow: 0 0 0 24px rgba(234, 88, 12, 0), 0 10px 30px rgba(234, 88, 12, 0.4); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(234, 88, 12, 0), 0 10px 30px rgba(234, 88, 12, 0.4); }
-        }
-
-        .modal-overlay {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(11, 15, 25, 0.75); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
-            z-index: 1051; display: none; justify-content: center; align-items: center;
-            opacity: 0; transition: opacity 0.4s ease; padding: 20px;
-        }
-        .modal-overlay.active { display: flex; opacity: 1; }
-        
-        .quick-modal {
-            background: var(--card-bg); padding: 50px 40px; border-radius: 32px;
-            max-width: 450px; width: 100%; text-align: center; position: relative;
-            box-shadow: 0 30px 70px rgba(0,0,0,0.5); border: 1px solid var(--card-border);
-            transform: translateY(-40px) scale(0.92);
-            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .modal-overlay.active .quick-modal { transform: translateY(0) scale(1); }
-        .quick-modal h3 { color: var(--accent-green); font-size: 1.8rem; margin-bottom: 15px; font-weight: 900; }
-        .quick-modal p { margin-bottom: 35px; color: var(--text-color); font-size: 1.05rem; }
-        
-        .modal-call-btn {
-            display: inline-block; background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
-            color: white; padding: 16px 36px; border-radius: 50px; font-weight: 800;
-            text-decoration: none; font-size: 1.2rem; width: 100%;
-            box-shadow: 0 6px 20px rgba(234, 88, 12, 0.3);
-        }
-        .modal-close { position: absolute; top: 15px; right: 25px; font-size: 2rem; cursor: pointer; color: var(--sub-text); }
-
-        footer { text-align: center; padding: 50px 20px; background-color: #06150e; color: #64748b; font-size: 0.95rem; border-top: 1px solid rgba(255,255,255,0.02); }
-
-        /* RESPONSIVE DESIGN (RWD) */
-        @media (max-width: 990px) {
-            body { padding-top: 85px; }
-            nav { height: 85px; }
-            nav.scrolled { --nav-height: 85px; }
-            .menu-toggle { display: flex; }
-            .nav-container { padding: 0 20px; }
-            
-            .logo-main { font-size: 1.2rem; }
-
-            .nav-links {
-                position: absolute; top: 100%; left: 0; width: 100%;
-                background-color: var(--card-bg); backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(30px);
-                border-top: 1px solid var(--card-border); flex-direction: column; gap: 0;
-                padding: 15px 0; box-shadow: 0 20px 40px var(--shadow-color);
-                display: none; opacity: 0; transform: translateY(-10px);
-                transition: opacity 0.3s ease, transform 0.3s ease;
-            }
-            .nav-links.active { display: flex; opacity: 1; transform: translateY(0); }
-            .nav-links li { width: 100%; text-align: center; }
-            .nav-links a.menu-item { display: block; padding: 18px 20px; width: 100%; border-bottom: 1px solid rgba(0,0,0,0.02); }
-            .nav-links a.menu-item::after { display: none; }
-            
-            .nav-btn { border-radius: 0; background: var(--accent-orange); padding: 20px; width: 100%; justify-content: center; box-shadow: none; }
-            .theme-toggle-wrapper { padding: 15px; width: 100%; justify-content: center; border-bottom: 1px solid rgba(0,0,0,0.02); }
-
-            .contact-box { grid-template-columns: 1fr; padding: 35px 20px; gap: 40px; }
-            .form-grid-2 { grid-template-columns: 1fr; gap: 18px; }
-            .form-trust-bar { flex-direction: column; gap: 10px; text-align: center; }
-            header { padding: 160px 20px 110px 20px; }
-            header h1 { font-size: 2.4rem; letter-spacing: -1px; }
-            header p { font-size: 1.15rem; }
-            section h2 { font-size: 2.2rem; }
-            .container { padding: 60px 16px; }
-            
-            .gallery-overlay { display: none !important; }
-            .mobile-portfolio-desc { display: block; }
-            
-            .map-wrapper { height: 280px; }
-        }
+        button.age-btn:hover { background: #27ae60; }
+        .family-box { background: #2a2a2a; padding: 10px; border-radius: 8px; margin-bottom: 15px; font-size: 14px; }
     </style>
 </head>
 <body>
 
-    <script>
-        (function() {
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme === 'dark') {
-                document.body.setAttribute('data-theme', 'dark');
-            }
-        })();
-    </script>
-
-    <nav id="mainNavbar">
-        <div class="nav-container">
-            <a href="#" class="logo-block">
-                <div class="logo-main">Klussenbedrijf <span>Berkel en Rodenrijs</span></div>
-            </a>
-            
-            <button class="menu-toggle" id="menuToggleBtn" aria-label="Menu openen">
-                <span></span><span></span><span></span>
-            </button>
-
-            <ul class="nav-links" id="navLinksMenu">
-                <li><a href="#over-ons" class="menu-item" onclick="closeMobileMenu()">Over Ons</a></li>
-                <li><a href="#diensten" class="menu-item" onclick="closeMobileMenu()">Diensten</a></li>
-                <li><a href="#werkwijze" class="menu-item" onclick="closeMobileMenu()">Werkwijze</a></li>
-                <li><a href="#ons-werk" class="menu-item" onclick="closeMobileMenu()">Ons Werk</a></li>
-                <li><a href="#reviews" class="menu-item" onclick="closeMobileMenu()">Reviews</a></li>
-                <li class="theme-toggle-wrapper"><button class="theme-toggle" id="themeToggle" title="Verander thema">🌙</button></li>
-                <li><a href="#contact" class="nav-btn" onclick="closeMobileMenu()">Offerte Aanvragen <span>→</span></a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <header>
-        <h1>Uw lokale schildersbedrijf uit Berkel en Rodenrijs</h1>
-        <p>Vakmanschap van het hoogste niveau met 25 jaar ervaring</p>
-        <a href="#contact" class="btn-main">Vrijblijvende Offerte</a>
-    </header>
-
-    <div class="container">
-
-        <section id="over-ons">
-            <h2>Over Ons Bedrijf</h2>
-            <p class="section-subtitle">Betrouwbaarheid en pure kwaliteit in Berkel en Rodenrijs</p>
-            <div class="about-card">
-                <p>
-                    Wij zijn een ervaren en betrouwbaar schilders- en klussenbedrijf gevestigd in Berkel en Rodenrijs. Met ruim 25 jaar ervaring verzorgen wij hoogwaardig schilder-, onderhouds- en renovatiewerk voor villa’s, eengezinswoningen, VvE’s i bedrijfspanden.
-                </p>
-                <div class="stats-grid">
-                    <div class="stat-item"><h4><span class="counter" data-target="25">0</span>+</h4><p>Jaar Ervaring</p></div>
-                    <div class="stat-item"><h4><span class="counter" data-target="100">0</span>%</h4><p>Tevredenheid</p></div>
-                    <div class="stat-item"><h4>Top Kwaliteit</h4><p>Gegarandeerd</p></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="diensten">
-            <h2>Onze Specialisaties</h2>
-            <p class="section-subtitle">Waarmee kunnen wij u vakkundig van dienst zijn?</p>
-            <div class="services-grid">
-                <div class="service-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
-                    <h3>🏡 Buitenschilderwerk</h3>
-                    <p>Duurzame bescherming van uw gevels, ramen i kozijnen tegen alle Nederlandse weersinvloeden.</p>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                    <h3>🎨 Binnenschilderwerk</h3>
-                    <p>Strak en nauwkeurig schilderwerk voor wanden, plafonds, binnenkozijnen en trappen binnenshuis.</p>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="150">
-                    <h3>📄 Behang- & Stucwerk</h3>
-                    <p>Professionele wandafwerking voor perfect egale en prachtig afgewerkte muren.</p>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
-                    <h3>💎 Glaswerk</h3>
-                    <p>Levering en vakkundige plaatsing van diverse soorten moderne isolatie- en HR++ glas.</p>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                    <h3>🪵 Houtreparatie</h3>
-                    <p>Herstel van houtrot en vakkundige aanpassingen om uw houtwerk in topconditie te houden.</p>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="150">
-                    <h3>🚪 Ramen & Deuren</h3>
-                    <p>Grondig onderhoud, strak schilderwerk en het perfect afstellen van al uw hang- en sluitwerk.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="werkwijze" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <div class="process-box">
-                <h3>Onze Werkwijze</h3>
-                <div class="steps-grid">
-                    <div class="step"><div class="step-num">1</div><h4>Aanvraag</h4><p>U neemt contact op en we bespreken uw wensen.</p></div>
-                    <div class="step"><div class="step-num">2</div><h4>Offerte</h4><p>U ontvangt een heldere, vrijblijvende prijsopgave.</p></div>
-                    <div class="step"><div class="step-num">3</div><h4>Uitvoering</h4><p>Wij werken netjes, vakkundig en strak op planning.</p></div>
-                    <div class="step"><div class="step-num">4</div><h4>Oplevering</h4><p>Gezamenlijke controle voor een 100% topresultaat.</p></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="ons-werk">
-            <h2>Ons Recente Werk</h2>
-            <p class="section-subtitle">Een greep uit onze gerealiseerde projecten (Klik op een foto voor grotere weergave)</p>
-            <div class="gallery-grid">
-                
-                <div class="gallery-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" onclick="openLightbox('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80')">
-                    <div class="gallery-img-container">
-                        <div class="gallery-img" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80')"></div>
-                        <div class="gallery-overlay">
-                            <h3>Buitenschilderwerk</h3>
-                            <p>Volledig onderhoud, reiniging en professioneel lakwerk van kozijnen, deuren en gevelelementen.</p>
-                        </div>
-                    </div>
-                    <div class="gallery-caption">
-                        <h3>Buitenwerk</h3>
-                    </div>
-                    <div class="mobile-portfolio-desc">
-                        Volledig onderhoud, reiniging en professioneel lakwerk van kozijnen, deuren en gevelelementen.
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100" onclick="openLightbox('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80')">
-                    <div class="gallery-img-container">
-                        <div class="gallery-img" style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=crop&w=800&q=80')"></div>
-                        <div class="gallery-overlay">
-                            <h3>Binnenschilderwerk</h3>
-                            <p>Strakke wandafwerking, sauswerk van plafonds en nauwkeurig schilderwerk binnenshuis.</p>
-                        </div>
-                    </div>
-                    <div class="gallery-caption">
-                        <h3>Binnenwerk</h3>
-                    </div>
-                    <div class="mobile-portfolio-desc">
-                        Strakke wandafwerking, sauswerk van plafonds en nauwkeurig schilderwerk binnenshuis.
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="reviews" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <h2>Klantbeoordelingen</h2>
-            <p class="section-subtitle">Wat onze klanten over ons zeggen op Google</p>
-            <div class="google-reviews-box">
-                <h3>Bekijk ons op Google</h3>
-                <div class="google-stars">★★★★★</div>
-                <p>We streven altijd naar de hoogste kwaliteit en 100% tevredenheid. Benieuwd naar de ervaringen van anderen?</p>
-                <a href="https://www.google.com/search?cs=1&hl=en-NL&sxsrf=ANbL-n5t_8yKee8QG1loAebposUKCiUxDg:1780160342572&q=Klussenbedrijf+tomma+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDAzNLMwNTWwNDQzBzINjIzMNjAyvmKU8c4pLS5OzUtKTSnKzEpTKMnPzU1UCEoty0wtL17EilcaALSsR4hZAAAA&rldimm=10616855091676160226&tbm=lcl&dpr=1.5#lkt=LocalPoiReviews" target="_blank" class="btn-google-review">
-                    <svg class="google-btn-icon" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v3.92h6.61c-.29 1.53-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.65-5.17 3.65-8.58z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.11 0-5.74-2.11-6.68-4.96H1.21v3.15C3.18 21.88 7.31 24 12 24z"/><path fill="#FBBC05" d="M5.32 14.24c-.24-.72-.38-1.5-.38-2.3a7.83 7.83 0 0 1 .38-2.3V6.49H1.21A11.94 11.94 0 0 0 0 12c0 1.97.48 3.83 1.21 5.51l4.11-3.27z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.18 2.12 1.21 5.51l4.11 3.27c.94-2.85 3.57-4.96 6.68-4.96z"/></svg>
-                    <span>Bekijk Google Reviews</span>
-                </a>
-            </div>
-        </section>
-
-        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-            <span class="lightbox-close">×</span>
-            <img class="lightbox-img" id="lightboxImg" src="" alt="Grotere weergave">
-        </div>
-
-        <section id="contact" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <h2>Offerte Aanvragen</h2>
-            <p class="section-subtitle">Deel uw plannen en ontvang snel een vrijblijvende prijsopgave</p>
-            <div class="contact-box">
-                
-                <div>
-                    <div class="form-trust-bar">
-                        <span>✨ 100% Gratis & Vrijblijvend</span>
-                        <span>📋 Duidelijke prijsindicatie</span>
-                    </div>
-
-                    <form class="contact-form" id="premiumContactForm" action="https://formspree.io/f/xojbbwzb" method="POST">
-                        <div class="form-grid-2">
-                            <div class="form-group">
-                                <label>Uw Naam *</label>
-                                <input type="text" name="name" required placeholder="Jan Jansen">
-                            </div>
-                            <div class="form-group">
-                                <label>Telefoonnummer *</label>
-                                <input type="tel" name="phone" required placeholder="06 12345678">
-                            </div>
-                        </div>
-                        <div class="form-grid-2">
-                            <div class="form-group">
-                                <label>E-mailadres *</label>
-                                <input type="email" name="email" required placeholder="jan@example.nl">
-                            </div>
-                            <div class="form-group">
-                                <label>Postcode & Plaats *</label>
-                                <input type="text" name="location" required placeholder="2651 EX, Berkel">
-                            </div>
-                        </div>
-                        <div class="form-grid-2">
-                            <div class="form-group">
-                                <label>Type Werkzaamheid *</label>
-                                <select name="service">
-                                    <option value="Buitenschilderwerk">Buitenschilderwerk</option>
-                                    <option value="Binnenschilderwerk">Binnenschilderwerk</option>
-                                    <option value="Behang en Stucwerk">Behang- & Stucwerk</option>
-                                    <option value="Houtreparatie">Houtreparatie / Onderhoud</option>
-                                    <option value="Andere Klus">Andere kluswerkzaamheden</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Gewenste startdatum</label>
-                                <select name="start_time">
-                                    <option value="Zo snel mogelijk">Zo snel mogelijk</option>
-                                    <option value="Binnen 1 tot 3 maanden">Binnen 1 tot 3 maanden</option>
-                                    <option value="In overleg / Flexibel">In overleg / Flexibel</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Beschrijf uw project *</label>
-                            <textarea name="message" rows="5" required placeholder="Vertel ons more over uw wensen..."></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit-premium" id="submitBtn">
-                            <span id="btnText">Verzend Aanvraag</span> 🚀
-                        </button>
-                    </form>
-                </div>
-
-                <div class="contact-sidebar">
-                    <div>
-                        <h3>Contactgegevens</h3>
-                        <p style="margin-bottom: 20px;">Heeft u liever direct persoonlijk contact? Bel of mail ons gerust.</p>
-                        <p style="margin-bottom: 10px;"><strong>📞 Telefoon:</strong><br><a href="tel:+31654967900" class="info-link">+31 654 967 900</a></p>
-                        <p style="margin-bottom: 10px;"><strong>✉️ E-mail:</strong><br><a href="mailto:tomma.info@gmail.com" class="info-link">tomma.info@gmail.com</a></p>
-                        <p style="margin-bottom: 5px;"><strong>📍 Adres:</strong><br>Verveenstraat 19, 2651EX Berkel en Rodenrijs</p>
-                    </div>
-                    
-                    <div class="map-wrapper">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39257.26297380963!2d4.441400263624896!3d51.99616010079361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c439cd6686144b%3A0x6bfa3e6488fe6be7!2sBerkel%20en%20Rodenrijs%2C%20Holandia!5e0!3m2!1spl!2spl!4v1717000000000!5m2!1spl!2spl" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="werkgebied-section" data-aos="fade-up">
-                <h3>Ons Werkgebied</h3>
-                <p>Als lokaal schilders- en onderhoudsbedrijf zijn wij actief in de gegeneerde gemeente <strong>Lansingerland</strong>. We komen snel bij u langs voor een inspectie of een vrijblijvende offerte in:</p>
-                <div class="werkgebied-grid">
-                    <div class="gebied-badge">📍 Berkel en Rodenrijs</div>
-                    <div class="gebied-badge">📍 Bergschenhoek</div>
-                    <div class="gebied-badge">📍 Bleiswijk</div>
-                </div>
-            </div>
-
-        </section>
-
+<div class="game-container">
+    <h1>📱 BitLife JS Edition</h1>
+    
+    <div id="creation-screen">
+        <h3>Stwórz swoją postać</h3>
+        <input type="text" id="input-name" placeholder="Twoje imię" style="width: 95%; padding: 10px; margin-bottom: 10px;">
+        <input type="text" id="input-surname" placeholder="Twoje nazwisko" style="width: 95%; padding: 10px; margin-bottom: 10px;">
+        <button onclick="startGame()" style="width: 100%;">Rozpocznij Życie 🚀</button>
     </div>
 
-    <div class="floating-call-btn" onclick="openModal()" title="Snel bellen">📞</div>
+    <div id="game-screen" style="display: none;">
+        <h2 id="char-name">Imię Nazwisko</h2>
+        <p style="text-align: center; color: #aaa;" id="char-info">Wiek: 0 | Kraj: Polska | Kasa: 0 PLN</p>
 
-    <div class="modal-overlay" id="contactModal" onclick="closeModal(event)">
-        <div class="quick-modal">
-            <span class="modal-close" onclick="closeModal(event, true)">×</span>
-            <h3>Snel een offerte?</h3>
-            <p>Wilt u direct een vakman spreken? Bel ons nu op!</p>
-            <a href="tel:+31654967900" class="modal-call-btn">📞 Bel +31 654 967 900</a>
+        <div class="stats-grid">
+            <div>Szczęście: <span id="stat-happy-val">0</span>% <div class="stat-bar"><div id="stat-happy" class="stat-fill"></div></div></div>
+            <div>Zdrowie: <span id="stat-health-val">0</span>% <div class="stat-bar"><div id="stat-health" class="stat-fill"></div></div></div>
+            <div>Mądrość: <span id="stat-smart-val">0</span>% <div class="stat-bar"><div id="stat-smart" class="stat-fill"></div></div></div>
+            <div>Wygląd: <span id="stat-looks-val">0</span>% <div class="stat-bar"><div id="stat-looks" class="stat-fill"></div></div></div>
+        </div>
+
+        <div class="family-box">
+            <strong>👨‍👩‍👦 Rodzina:</strong>
+            <div id="family-list"></div>
+        </div>
+
+        <div class="log-box" id="event-log"></div>
+
+        <div class="actions-grid">
+            <button class="age-btn" onclick="ageUp()">➕ Postarz o 1 Rok</button>
+            <button onclick="doActivity('school')">🏫 Szkoła / Edukacja</button>
+            <button onclick="doActivity('work')">💼 Praca i Zarobki</button>
+            <button onclick="doActivity('sports')">⚽ Sport i Hobby</button>
+            <button onclick="doActivity('social')">📸 Social Media (<span id="followers-cnt">0</span>)</button>
         </div>
     </div>
+</div>
 
-    <footer>
-        <p>© 2026 Klussenbedrijf Berkel en Rodenrijs. Alle rechten voorbehouden.</p>
-    </footer>
+<script>
+    // ZMIENNE GRY
+    let player = {
+        name: "",
+        surname: "",
+        age: 0,
+        country: "Polska",
+        money: 0,
+        followers: 0,
+        stats: { happy: 50, health: 50, smart: 50, looks: 50 },
+        parents: {},
+        job: "Brak",
+        schoolStage: "Brak"
+    };
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        const savedTheme = localStorage.getItem('theme');
-        const themeToggle = document.getElementById('themeToggle');
+    const countries = ["Polska", "USA", "Niemcy", "Japonia", "Wielka Brytania", "Hiszpania"];
+    const maleNames = ["Jan", "Piotr", "Adam", "Michał", "Kamil", "Mateusz"];
+    const femaleNames = ["Anna", "Maria", "Katarzyna", "Ewa", "Karolina", "Wiktoria"];
+
+    function randomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function startGame() {
+        const nameInput = document.getElementById('input-name').value.trim();
+        const surnameInput = document.getElementById('input-surname').value.trim();
+
+        player.name = nameInput || "Krzysztof";
+        player.surname = surnameInput || "Kowalski";
+        player.country = countries[Math.floor(Math.random() * countries.length)];
         
-        if (savedTheme === 'dark') {
-            document.body.setAttribute('data-theme', 'dark');
-            themeToggle.textContent = '☀️';
-        } else {
-            document.body.removeAttribute('data-theme');
-            themeToggle.textContent = '🌙';
-        }
+        // Losowanie statystyk startowych
+        player.stats.happy = randomInt(40, 99);
+        player.stats.health = randomInt(50, 99);
+        player.stats.smart = randomInt(20, 90);
+        player.stats.looks = randomInt(20, 90);
 
-        AOS.init({ duration: 900, once: true, disable: window.innerWidth < 500 });
-
-        const menuToggleBtn = document.getElementById('menuToggleBtn');
-        const navLinksMenu = document.getElementById('navLinksMenu');
-
-        menuToggleBtn.addEventListener('click', () => {
-            menuToggleBtn.classList.toggle('open');
-            if (navLinksMenu.style.display === 'flex') {
-                navLinksMenu.classList.remove('active');
-                setTimeout(() => { navLinksMenu.style.display = 'none'; }, 350);
-            } else {
-                navLinksMenu.style.display = 'flex';
-                setTimeout(() => { navLinksMenu.classList.add('active'); }, 10);
-            }
-        });
-
-        function closeMobileMenu() {
-            if (window.innerWidth <= 990) {
-                menuToggleBtn.classList.remove('open');
-                navLinksMenu.classList.remove('active');
-                setTimeout(() => { navLinksMenu.style.display = 'none'; }, 350);
-            }
-        }
-
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = document.body.getAttribute('data-theme');
-            if (currentTheme === 'dark') {
-                document.body.removeAttribute('data-theme');
-                themeToggle.textContent = '🌙';
-                localStorage.setItem('theme', 'light');
-            } else {
-                document.body.setAttribute('data-theme', 'dark');
-                themeToggle.textContent = '☀️';
-                localStorage.setItem('theme', 'dark');
-            }
-            closeMobileMenu();
-        });
-
-        const navbar = document.getElementById('mainNavbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        const sections = document.querySelectorAll('section');
-        const navItems = document.querySelectorAll('.nav-links a.menu-item');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (window.scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navItems.forEach(item => {
-                item.classList.remove('active');
-                if (item.getAttribute('href').includes(current)) {
-                    item.classList.add('active');
-                }
-            });
-        });
-
-        const form = document.getElementById('premiumContactForm');
-        const submitBtn = document.getElementById('submitBtn');
-        const btnText = document.getElementById('btnText');
-
-        form.addEventListener('submit', () => {
-            submitBtn.disabled = true;
-            btnText.textContent = "Verzenden...";
-        });
-
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightboxImg');
-        function openLightbox(imgUrl) {
-            lightboxImg.src = imgUrl;
-            lightbox.classList.add('active');
-        }
-        function closeLightbox() { lightbox.classList.remove('active'); }
-
-        const contactModal = document.getElementById('contactModal');
-        function openModal() { contactModal.classList.add('active'); }
-        function closeModal(e, force = false) {
-            if (e.target === contactModal || force) { contactModal.classList.remove('active'); }
-        }
-
-        const counters = document.querySelectorAll('.counter');
-        const speed = 70;
-        const startCounters = () => {
-            counters.forEach(counter => {
-                const updateCount = () => {
-                    const target = +counter.getAttribute('data-target');
-                    const count = +counter.innerText;
-                    const inc = target / speed;
-                    if (count < target) {
-                        counter.innerText = Math.ceil(count + inc);
-                        setTimeout(updateCount, 20);
-                    } else {
-                        counter.innerText = target;
-                    }
-                };
-                updateCount();
-            });
+        // Losowanie rodziców
+        player.parents = {
+            father: `${maleNames[Math.floor(Math.random() * maleNames.length)]} ${player.surname} (Wiek: ${randomInt(22, 40)})`,
+            mother: `${femaleNames[Math.floor(Math.random() * femaleNames.length)]} ${player.surname} (Wiek: ${randomInt(20, 38)})`
         };
 
-        const sectionOverOns = document.getElementById('over-ons');
-        const observer = new IntersectionObserver((entries) => {
-            if (entries[0].isIntersecting) {
-                startCounters();
-                observer.disconnect();
+        document.getElementById('creation-screen').style.display = 'none';
+        document.getElementById('game-screen').style.display = 'block';
+
+        logEvent(`Urodziłeś/aś się w miejscowości w kraju: <b>${player.country}</b>.`);
+        logEvent(`Twoim tatą jest ${player.parents.father}, a mamą ${player.parents.mother}.`);
+        updateUI();
+    }
+
+    function updateUI() {
+        document.getElementById('char-name').innerText = `${player.name} ${player.surname}`;
+        document.getElementById('char-info').innerText = `Wiek: ${player.age} | Kraj: ${player.country} | Kasa: ${player.money} PLN | Praca: ${player.job}`;
+        document.getElementById('followers-cnt').innerText = player.followers;
+
+        // Paski statystyk
+        for (let stat in player.stats) {
+            document.getElementById(`stat-${stat}`).style.width = player.stats[stat] + '%';
+            document.getElementById(`stat-${stat}-val`).innerText = player.stats[stat];
+        }
+
+        // Rodzina
+        document.getElementById('family-list').innerHTML = `
+            • Ojciec: ${player.parents.father}<br>
+            • Matka: ${player.parents.mother}
+        `;
+    }
+
+    function logEvent(text) {
+        const logBox = document.getElementById('event-log');
+        logBox.innerHTML = `<div class="log-entry"><b>[Wiek: ${player.age}]</b> ${text}</div>` + logBox.innerHTML;
+    }
+
+    function ageUp() {
+        player.age++;
+
+        // Zmiany edukacyjne
+        if (player.age === 7) {
+            player.schoolStage = "Szkoła Podstawowa";
+            logEvent("🎒 Rozpoczynasz naukę w Szkole Podstawowej!");
+        } else if (player.age === 15) {
+            player.schoolStage = "Liceum";
+            logEvent("🏫 Awansujesz do Liceum!");
+        } else if (player.age === 19) {
+            player.schoolStage = "Uniwersytet";
+            logEvent("🎓 Rozpoczynasz Studia na Uniwersytecie!");
+        } else if (player.age === 24) {
+            player.schoolStage = "Wykształcony";
+            logEvent("👨‍🎓 Ukończyłeś edukację!");
+        }
+
+        // Pensja jeśli ma pracę
+        if (player.job !== "Brak") {
+            let salary = randomInt(3000, 8000);
+            player.money += salary;
+            logEvent(`💰 Zarobiłeś ${salary} PLN w swojej pracy (${player.job}).`);
+        }
+
+        // Randomowe zdarzenia życiowe
+        triggerRandomEvent();
+        updateUI();
+    }
+
+    function triggerRandomEvent() {
+        const roll = Math.random();
+        if (roll < 0.2) {
+            let found = randomInt(10, 200);
+            player.money += found;
+            logEvent(`💵 Znalazłeś na ulicy ${found} PLN!`);
+        } else if (roll < 0.35) {
+            player.stats.health = Math.max(0, player.stats.health - 10);
+            logEvent("🤧 Przeziębiłeś się! Twoje zdrowie trochę spadło.");
+        } else if (roll < 0.45 && player.age > 12) {
+            let newFollowers = randomInt(5, 50);
+            player.followers += newFollowers;
+            logEvent(`📈 Twój stary filmik stał się viralem! Zyskujesz +${newFollowers} obserwujących.`);
+        }
+    }
+
+    function doActivity(type) {
+        if (type === 'school') {
+            if (player.age < 7) {
+                alert("Jesteś za młody na szkołę!");
+                return;
             }
-        }, { threshold: 0.15 });
-        observer.observe(sectionOverOns);
-    </script>
+            player.stats.smart = Math.min(100, player.stats.smart + 5);
+            logEvent("📚 Uczyłeś się pilnie. Twoja mądrość wzrosła!");
+        } 
+        else if (type === 'work') {
+            if (player.age < 16) {
+                alert("Musisz mieć min. 16 lat, aby pracować!");
+                return;
+            }
+            if (player.job === "Brak") {
+                const jobs = ["Sprzedawca", "Programista", "Kucharz", "Grafik"];
+                player.job = jobs[Math.floor(Math.random() * jobs.length)];
+                logEvent(`🎉 Dostałeś swoją pierwszą pracę jako **${player.job}**!`);
+            } else {
+                logEvent(`Pracujesz ciężko jako ${player.job}.`);
+            }
+        } 
+        else if (type === 'sports') {
+            player.stats.health = Math.min(100, player.stats.health + 5);
+            player.stats.looks = Math.min(100, player.stats.looks + 2);
+            logEvent("⚽ Poszedłeś na trening sportowy. Zdrowie i wygląd w górę!");
+        } 
+        else if (type === 'social') {
+            if (player.age < 10) {
+                alert("Jesteś za młody na Social Media!");
+                return;
+            }
+            let gained = randomInt(1, 20);
+            player.followers += gained;
+            logEvent(`📸 Dodałeś nowe zdjęcie na Social Media. +${gained} nowych obserwujących!`);
+        }
+        updateUI();
+    }
+</script>
+
 </body>
 </html>
